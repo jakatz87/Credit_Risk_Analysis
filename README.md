@@ -50,7 +50,7 @@ Although the precision and sensitivity scores are similar to the oversampler mod
 
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN1.png)
 
-This model, although using both oversampling and undersampling has very similar results to both oversampling models.
+This model, although using both oversampling and undersampling, has very similar results to both oversampling models.
 
 - Balanced Random Forest Bootstrap Model
 
