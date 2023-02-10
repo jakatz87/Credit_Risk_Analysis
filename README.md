@@ -67,7 +67,7 @@ This model uses different bootstrap samples and uses random undersampling for ba
 ## Summary
 Comparing all the models based on Balanced Accuracy and F1 scores should result in a clear choice of using the Easy Ensemble AdaBoost Model for a ML algorithm with this data set. The concern of overfitting data for this model is tempered by the fact that it uses random undersampling for each bootstrap.
 
-I don’t recommend using any of these models, however.  The low precision scores for high-risk loans is quite troubling.  If high-risk loan labels have a high probability of false positives, these models may continue the decades-old lending practices that have shaped the socio economic landscape we are dealing with today.  False positive labels for high risk loans have made a drastic impact on geographical, racial, and economic tensions.  
+I don’t recommend using any of these models, however.  The low precision scores for high-risk loans is quite troubling.  If high-risk loan labels have a high probability of false positives, these models may continue the decades-old lending practices that have shaped the socio economic landscape we are dealing with today.  False positive labels for high risk loans have made a drastic impact on geographical, racial, and economic tensions.  One may argue that even though the sample size for high-risk loans is small so the number of people affected by this practice is comparably low, I personally do not think it is worth the risk.
 
 More experimentation needs to be done using the previously mentioned feature importances and a wider variety of ML algorithms before any financial institution implements them.  
 
