@@ -19,7 +19,7 @@ X_train,X_test, y_train,y_test = train_test_split(X,y, random_state=1)
 
 **Predict**: Each model can predict its accuracy of the testing data (the remaining 20% - 25%) and the results are displayed using either a confusion matrix or a classification report.
 
-NOTE: One feature of ML is the ability to measure the impact of each feature (variable) on the outcome of the prediction. Even though these results are only from one ML model, they are telling:
+NOTE: Maching Learning can use **feature importances**: the ability to measure the impact of each feature (variable) on the outcome of the prediction. Even though these results are only from one ML model, they are telling:
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/Features.png)
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/Features2.png)
 
