@@ -28,28 +28,40 @@ The highest impacts on the predictions seem to be payback amounts, but only cont
 ## Results
 I focused on the Classification Reports for each type of ML model, mainly on the Balanced Accuracy Score (the “geo” label) and the Harmonic Mean of the Precision and Sensitivity (the “f1” label)
 
-Random Oversampler Model
+- Random Oversampler Model
+
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/Random_Over1.png)
+
 This model is quite precise with identifying low-risk loans, although not so well for high-risk loans which means a large number of false positives.  The sensitivity (“rec” label) is much better, meaning a reduction in the number of false negatives.  The Balanced Accuracy and F1 scores are not indicative of a good model.
 
-SMOTE Oversampler Model
+- SMOTE Oversampler Model
+
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/SMOTE1.png)
+
 This model shares many features of the Random Oversampler, but the Balanced Accuracy and F1 scores are slightly higher.
 
-Centroid Clusters Undersampler Model
+- Centroid Clusters Undersampler Model
+
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/Cluster_Centroids1.png)
+
 Although the precision and sensitivity scores are similar to the oversampler models, this model’s Balanced Accuracy and F1 scores are significantly lower.  This would be an intuitive result as lower sample sizes tend to reduce accuracy (as long as overfitting is not happening with the larger sample sizes).
 
-SMOTEENN Combination Model
+- SMOTEENN Combination Model
+
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN1.png)
+
 This model, although using both oversampling and undersampling has very similar results to both oversampling models.
 
-Balanced Random Forest Bootstrap Model
+- Balanced Random Forest Bootstrap Model
+
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/Balanced_Random_Forest1.png)
+
 This model randomly undersamples each iteration of its decision tree, and was set to run 100 estimators.  The precision of low-risk loans was slightly higher than the other models, but the sensitivity is markedly improved.  This model is much less likely to generate false negatives for both high- and low-risk loans.  The Balanced Accuracy and F1 scores are much improved as well.
 
-Easy Ensemble AdaBoost Model
+- Easy Ensemble AdaBoost Model
+
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/Easy_Ensemble_AdaBoost.png)
+
 This model uses different bootstrap samples and uses random undersampling for balance, and was also set to run 100 estimators.  This model showed the highest amount of precision for high-risk loans, as well as the best Balanced Accuracy and F1 scores.
 
 ## Summary
