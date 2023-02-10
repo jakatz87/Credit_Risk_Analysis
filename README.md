@@ -10,14 +10,14 @@ I used the Sci-Kit and Imbalanced learning packages in Python to implement machi
 
 ## Process
 Machine Learning (ML) can be simplified into model-fit-predict.  
-Model: The data is separated into between 75% and 80% for training a model, the remainder is used for testing it.  
+**Model**: The data is separated into between 75% and 80% for training a model, the remainder is used for testing it.  
 ```
 from sklearn.model_selection import train_test_split
 X_train,X_test, y_train,y_test = train_test_split(X,y, random_state=1)
 ```
-Fit: Many options are available for ML algorithms and how each works with the data.  Since the amounts for high-risk and low-risk loans were drastically different, I compared some models with Oversampling (increasing the amount of high-risk loans), Undersampling (lowering the amount of low-risk loans), a combination of both, and two separate models of ensemble learning that uses multiple amounts of models within each model.
+**Fit**: Many options are available for ML algorithms and how each works with the data.  Since the amounts for high-risk and low-risk loans were drastically different, I compared some models with Oversampling (increasing the amount of high-risk loans), Undersampling (lowering the amount of low-risk loans), a combination of both, and two separate models of ensemble learning that uses multiple amounts of models within each model.
 
-Predict: Each model can predict its accuracy of the testing data (the remaining 20% - 25%) and the results are displayed using either a confusion matrix or a classification report.
+**Predict**: Each model can predict its accuracy of the testing data (the remaining 20% - 25%) and the results are displayed using either a confusion matrix or a classification report.
 
 NOTE: One feature of ML is the ability to measure the impact of each feature (variable) on the outcome of the prediction. Even though these results are only from one ML model, they are telling:
 ![image](https://github.com/jakatz87/Credit_Risk_Analysis/blob/main/Resources/Features.png)
