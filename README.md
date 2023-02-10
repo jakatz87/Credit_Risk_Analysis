@@ -15,7 +15,7 @@ Machine Learning (ML) can be simplified into model-fit-predict.
 from sklearn.model_selection import train_test_split
 X_train,X_test, y_train,y_test = train_test_split(X,y, random_state=1)
 ```
-**Fit**: Many options are available for ML algorithms and how each works with the data.  Since the amounts for high-risk and low-risk loans were drastically different, I compared some models with Oversampling (increasing the amount of high-risk loans), Undersampling (lowering the amount of low-risk loans), a combination of both, and two separate models of ensemble learning that uses multiple amounts of models within each model.
+**Fit**: Many options are available for ML algorithms and how each works with the data.  Since the amounts for high-risk and low-risk loans were drastically different, I compared some models with **Oversampling** (increasing the amount of high-risk loans), **Undersampling** (lowering the amount of low-risk loans), a combination of both, and two separate models of ensemble learning that uses multiple amounts of models within each model.
 
 **Predict**: Each model can predict its accuracy of the testing data (the remaining 20% - 25%) and the results are displayed using either a confusion matrix or a classification report.
 
