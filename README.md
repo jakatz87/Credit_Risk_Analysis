@@ -4,9 +4,9 @@
 I used the Sci-Kit and Imbalanced learning packages in Python to implement machine learning models on credit risk data to determine the likelihood of high-risk or low-risk loans.
 
 ## Resources
-Python with Scikit and Imbalanced Libraries
-Jupyter Notebook
-LoanStats_2019Q1.csv
+- Python with Scikit and Imbalanced Libraries
+- Jupyter Notebook
+- LoanStats_2019Q1.csv
 
 ## Process
 Machine Learning (ML) can be simplified into model-fit-predict.  
